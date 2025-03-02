@@ -15,7 +15,7 @@ unzip can_bus.zip
 
 *We genetate custom annotation files which are different from mmdet3d's*
 ```
-python tools/maptrv2/custom_nusc_map_converter.py --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes --version v1.0 --canbus ./data
+python tools/maptrv2/custom_nusc_map_converter.py --root-path ./data/nuscenes --out-dir ./data/nuscenes/custom/hrmapnet --extra-tag nuscenes --version v1.0 --canbus ./data/nuscenes
 ```
 
 Using the above code will generate `nuscenes_map_infos_temporal_{train,val}.pkl`, which contain local vectorized map annotations.
